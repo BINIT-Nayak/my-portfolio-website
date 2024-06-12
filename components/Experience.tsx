@@ -1,11 +1,9 @@
-import React from "react";
-
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full">
+    <div className="py-20 w-full" id="experience">
       <h1 className="heading">
         My <span className="text-purple">work experience</span>
       </h1>
@@ -39,6 +37,9 @@ const Experience = () => {
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
+                <p className="text-start text-white-100">
+                  {card.company}
+                </p>
                 <p className="text-start text-white-100 mt-3 font-semibold">
                   {card.desc}
                 </p>

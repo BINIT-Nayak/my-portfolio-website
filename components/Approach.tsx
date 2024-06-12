@@ -1,5 +1,5 @@
-import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
@@ -20,9 +20,9 @@ const Approach = () => {
           navigation, and content requirements."
         >
           <CanvasRevealEffect
-            animationSpeed={5.1}
+            animationSpeed={3}
             // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
-            containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
+            containerClassName="bg-emerald-600 rounded-3xl overflow-hidden"
           />
         </Card>
         <Card

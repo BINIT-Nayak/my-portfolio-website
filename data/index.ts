@@ -1,5 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
@@ -13,7 +14,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/assests/b1.svg",
     spareImg: "",
   },
   {
@@ -43,19 +44,19 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: "/assests/grid.svg",
+    spareImg: "/assests/b4.svg",
   },
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building a Full Stack Website",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    img: "/assests/b5.svg",
+    spareImg: "/assests/grid.svg",
   },
   {
     id: 6,
@@ -72,34 +73,58 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "YouTube ReImagined",
+    des: "It is an upgraded version of the existing Youtube app made with React",
+    img: "/assests/p1.svg",
+    iconLists: [
+      "/assests/re.svg",
+      "/assests/tail.svg",
+      "/assests/ts.svg",
+      "/assests/three.svg",
+      "/assests/fm.svg",
+    ],
+    link: "https://github.com/BINIT-Nayak/YouTube_ReImagined",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Agriculture Portal",
+    des: "It is one stop solution php website for farmers and sellers",
+    img: "/assests/p2.svg",
+    iconLists: [
+      "/assests/next.svg",
+      "/assests/tail.svg",
+      "/assests/ts.svg",
+      "/assests/stream.svg",
+      "/assests/c.svg",
+    ],
+    link: "https://github.com/BINIT-Nayak/Agriculture-Portal",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Music for U",
+    des: "This is python app for recommending music based on facial expressions.",
+    img: "/assests/p3.svg",
+    iconLists: [
+      "/assests/re.svg",
+      "/assests/tail.svg",
+      "/assests/ts.svg",
+      "/assests/three.svg",
+      "/assests/c.svg",
+    ],
+    link: "https://github.com/BINIT-Nayak/Music-Recommendation-using-facial-expression",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    title: "Chat with GPT",
+    des: "ChatGPT Android App",
+    img: "/assests/p4.svg",
+    iconLists: [
+      "/assests/next.svg",
+      "/assests/tail.svg",
+      "/assests/ts.svg",
+      "/assests/three.svg",
+      "/assests/gsap.svg",
+    ],
     link: "/ui.apple.com",
   },
 ];
@@ -107,33 +132,27 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Binit was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Binit's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Binit is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Binit was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Binit's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your software and elevate your brand, Binit is the ideal partner.",
+    name: "Abhijit Bose Das",
+    title: "Software Developer in Kuhoo",
   },
   {
     quote:
-      "Collaborating with Binit was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Binit's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Binit is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Engaging with Binit was an exceptional experience. His professionalism, swift responses, and dedication to superior results were apparent from start to finish. Binit's fervor for development truly stands out. For those looking to elevate their website and brand, Binit is the ideal partner.",
+    name: "Madhyam Patra",
+    title: "Software Developer in CloudSek",
   },
   {
     quote:
-      "Collaborating with Binit was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Binit's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Binit is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Partnering with Binit exceeded my expectations. His exceptional professionalism, quick turnaround times, and meticulous attention to detail were impressive. Binit's passion for development shines through in every task he undertakes. If you want to elevate your website and brand, Binit is the partner you need.",
+    name: "Susobhit Mohapatra",
+    title: "Cyber Security Analyst",
   },
   {
     quote:
-      "Collaborating with Binit was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Binit's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Binit is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Binit was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Binit's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Binit is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working alongside Binit was an absolute delight. His professionalism, promptness, and unwavering commitment to excellence were apparent throughout our collaboration. Binit's passion for development is unmatched. If you're looking to take your website and brand to the next level, Binit is the ideal partner.",
+    name: "Ayan Sinha",
+    title: "Salesforce Developer in PWC",
   },
 ];
 
@@ -173,45 +192,50 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Intern",
+    company: "Arrise Solution",
+    desc: "Assisted in the development of promotions and automation tools using React.js, enhancing interactivity.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/assests/exp1.svg",
   },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
+  // {
+  //   id: 2,
+  //   title: "Mobile App Dev - JSM Tech",
+  //   desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+  //   className: "md:col-span-2", // change to md:col-span-2
+  //   thumbnail: "/assests/exp2.svg",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Freelance App Dev Project",
+  //   desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+  //   className: "md:col-span-2", // change to md:col-span-2
+  //   thumbnail: "/assests/exp3.svg",
+  // },
   {
     id: 4,
-    title: "Lead Frontend Developer",
+    title: "Associate Software Enginner",
+    company: "Arrise Solution",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/assests/exp4.svg",
   },
 ];
 
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/assests/git.svg",
+    link: "https://github.com/BINIT-Nayak",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/assests/twit.svg",
+    link: "https://x.com/BinitNayak48",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/assests/link.svg",
+    link: "https://www.linkedin.com/in/binitnayak2002/",
   },
 ];
