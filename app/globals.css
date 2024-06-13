@@ -83,3 +83,13 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+.linear-gradient {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 0.8492647058823529) 0%,
+    rgba(78, 9, 121, 0.8660714285714286) 9%,
+    rgba(201, 0, 255, 0) 45%
+  );
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaFileAlt } from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
@@ -53,6 +54,7 @@ export const BentoGridItem = ({
 }) => {
   const leftLists = ["Python", "Java", "TypeScript"];
   const rightLists = ["ReactJS", "SQL", "MongoDb"];
+  // const Resume = require("../../public/assets/AadhaarCard.pdf");
 
   const [copied, setCopied] = useState(false);
 
@@ -70,6 +72,17 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
+
+  const handleDownload = () => {
+    const url = '/assets/AadhaarCard.pdf';
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", "Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
 
   return (
     <div
@@ -191,6 +204,14 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
+              {/* <a href="/assets/app.svg" download='Resume'> */}
+                <MagicButton
+                  title={"My Resume"}
+                  icon={<FaFileAlt />}
+                  position="left"
+                  handleClick={handleDownload}
+                />
+              {/* </a> */}
             </div>
           )}
         </div>

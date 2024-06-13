@@ -13,8 +13,8 @@ export const gridItems = [
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/assests/b1.svg",
+    titleClassName: "justify-end linear-gradient",
+    img: "/assests/myPhoto.jpg",
     spareImg: "",
   },
   {
@@ -75,12 +75,11 @@ export const projects = [
     id: 1,
     title: "YouTube ReImagined",
     des: "It is an upgraded version of the existing Youtube app made with React",
-    img: "/assests/p1.svg",
+    img: "/assests/youTube_banner.jpg",
     iconLists: [
       "/assests/re.svg",
       "/assests/tail.svg",
       "/assests/ts.svg",
-      "/assests/three.svg",
       "/assests/fm.svg",
     ],
     link: "https://github.com/BINIT-Nayak/YouTube_ReImagined",
@@ -103,7 +102,7 @@ export const projects = [
     id: 3,
     title: "Music for U",
     des: "This is python app for recommending music based on facial expressions.",
-    img: "/assests/p3.svg",
+    img: "/assests/musicAppbanner.png",
     iconLists: [
       "/assests/re.svg",
       "/assests/tail.svg",
@@ -117,7 +116,7 @@ export const projects = [
     id: 4,
     title: "Chat with GPT",
     des: "ChatGPT Android App",
-    img: "/assests/p4.svg",
+    img: "/assests/chatGPTbanner.jpg",
     iconLists: [
       "/assests/next.svg",
       "/assests/tail.svg",
@@ -125,7 +124,7 @@ export const projects = [
       "/assests/three.svg",
       "/assests/gsap.svg",
     ],
-    link: "/ui.apple.com",
+    link: "https://github.com/BINIT-Nayak/Chat-With-GPT",
   },
 ];
 
@@ -193,7 +192,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Intern",
-    company: "Arrise Solution",
+    company: "Arrise (powering Pragmatic Play)",
     desc: "Assisted in the development of promotions and automation tools using React.js, enhancing interactivity.",
     className: "md:col-span-2",
     thumbnail: "/assests/exp1.svg",
@@ -215,7 +214,7 @@ export const workExperience = [
   {
     id: 4,
     title: "Associate Software Enginner",
-    company: "Arrise Solution",
+    company: "Arrise (powering Pragmatic Play)",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
     className: "md:col-span-2",
     thumbnail: "/assests/exp4.svg",
