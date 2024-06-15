@@ -74,7 +74,7 @@ export const BentoGridItem = ({
   };
 
   const handleDownload = () => {
-    const url = '/assets/AadhaarCard.pdf';
+    const url = "/assets/AadhaarCard.pdf";
     const link = document.createElement("a");
     link.href = url;
     link.setAttribute("download", "Resume.pdf");
@@ -82,7 +82,6 @@ export const BentoGridItem = ({
     link.click();
     document.body.removeChild(link);
   };
-
 
   return (
     <div
@@ -205,12 +204,12 @@ export const BentoGridItem = ({
                 otherClasses="!bg-[#161A31]"
               />
               {/* <a href="/assets/app.svg" download='Resume'> */}
-                <MagicButton
-                  title={"My Resume"}
-                  icon={<FaFileAlt />}
-                  position="left"
-                  handleClick={handleDownload}
-                />
+              <MagicButton
+                title={"My Resume"}
+                icon={<FaFileAlt />}
+                position="left"
+                handleClick={handleDownload}
+              />
               {/* </a> */}
             </div>
           )}
