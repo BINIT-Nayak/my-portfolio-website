@@ -93,3 +93,13 @@
     rgba(201, 0, 255, 0) 45%
   );
 }
+
+@media (min-width: 600px) and (max-width: 1020px) {
+  .myphoto-width {
+    width: 25rem;
+    float: right;
+  }
+  .title-width {
+    max-width: 21rem;
+  }
+}
