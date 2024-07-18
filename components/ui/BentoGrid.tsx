@@ -51,7 +51,7 @@ export const BentoGridItem = ({
 }) => {
   const leftLists = ["Python", "Java", "TypeScript"];
   const rightLists = ["ReactJS", "SQL", "MongoDb"];
-  // const Resume = require("../../public/assets/AadhaarCard.pdf");
+  const fileName = "Binit_s_Resume.pdf";
 
   const [copied, setCopied] = useState(false);
 
@@ -70,14 +70,21 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
-  const handleDownload = () => {
-    const url = "/assets/AadhaarCard.pdf";
-    const link = document.createElement("a");
-    link.href = url;
-    link.setAttribute("download", "Resume.pdf");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const handleDownload = async () => {
+    try {
+      const response = await fetch(`/assets/${fileName}`);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Download failed:", error);
+    }
   };
 
   return (
@@ -96,6 +103,7 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               src={img}
               alt={img}
@@ -109,6 +117,7 @@ export const BentoGridItem = ({
           } `}
         >
           {spareImg && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               src={spareImg}
               alt={spareImg}
@@ -186,14 +195,12 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
-              {/* <a href="/assets/app.svg" download='Resume'> */}
               <MagicButton
                 title={"My Resume"}
                 icon={<FaFileAlt />}
                 position="left"
                 handleClick={handleDownload}
               />
-              {/* </a> */}
             </div>
           )}
         </div>
